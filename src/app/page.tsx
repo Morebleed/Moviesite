@@ -1,17 +1,16 @@
 import Image from "next/image";
 import { axiosInstance } from "@/lib/axiosInstance";
-
 import React from "react";
-
-const getData = async () => {
-  const { data } = await axiosInstance("/movie/popular?language=en-US&page=1");
-  return data;
-};
+import { Genre } from "@/Components/ui/getData";
+import { Divide } from "lucide-react";
+import Sword from "@/Components/Sword";
 
 const page = async () => {
-  const data = await getData();
-  console.log({ data });
-  return <div></div>;
+  return (
+    <div>
+      <Genre />
+    </div>
+  );
 };
 
 export default page;
