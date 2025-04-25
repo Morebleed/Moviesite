@@ -1,6 +1,8 @@
+import { ToggleTheme } from "./ToggleTheme";
+
 const Header = () => {
   return (
-    <div h-100vh>
+    <div className="w-100vh flex">
       <h1>
         Movie Z <link rel="stylesheet" href="homepage" />
       </h1>
@@ -9,6 +11,7 @@ const Header = () => {
       <button>
         <img src="" alt="" />
       </button>
+      
     </div>
   );
 };

@@ -20,7 +20,7 @@ export const Genre = () => {
       setGenres(res.data.genres); // API response has a "genres" field
     } catch (error) {
       console.log(error);
-    }
+    }   
   };
 
   useEffect(() => {
