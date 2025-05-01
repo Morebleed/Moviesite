@@ -4,14 +4,14 @@ import React from "react";
 import { Genre } from "@/Components/ui/getData";
 import { Divide } from "lucide-react";
 import Carousel from "@/Components/Carousel";
-import Header from "@/Components/Header";
+import Header from "@/Components/header/Header";
 
 const page = async () => {
   return (
     <div>
       <Header />
       <Genre />
-     <Carousel />
+      <Carousel />
     </div>
   );
 };
