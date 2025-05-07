@@ -11,10 +11,10 @@ const Header = () => {
  const pathname = usePathname();
 
   return (
-    <div className="flex items-center justify-between py-[11.5] px-20">
+    <div className="flex items-center md:justify-between py-[11.5] px-20">
     <MovieImage />
 
-    {pathname === "/search" ? <SearchBarFirSearchPage/> : <SearchBarForOtherPages />}
+    {pathname === "/search" ? <SearchBarForSearchPage/> : <SearchBarForOtherPages />}
 
     <ThemeSwitch />
     </div>
